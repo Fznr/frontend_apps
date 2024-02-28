@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { MdDashboard, MdExitToApp } from 'react-icons/md'; // Import icons from react-icons
-import './navbar.css'; // Import CSS for styling
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { MdDashboard, MdExitToApp } from "react-icons/md";
+import "./navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.clear();
-    navigate('/login');
+    navigate("/login");
   };
   return (
     <nav className="navbar">

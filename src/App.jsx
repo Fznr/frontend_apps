@@ -1,5 +1,3 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './screens/login.jsx';
@@ -9,7 +7,7 @@ import PrivateRoute from './components/privateRoute.jsx';
 import ProfilePage from './screens/profile.jsx';
 import EditProfilePage from './components/editProfile.jsx';
 import AttendanceSummaryPage from './screens/attendaceSummary.jsx';
-import Navbar from './components/navbar.jsx'; // Import Navbar component
+import Navbar from './components/navbar.jsx';
 import EmployeeAttendanceSummaryPage from './screens/employeeAttendaceSummary.jsx';
 import EmployeesPage from './screens/employees.jsx';
 import AddEmployeePage from './components/addEmployee.jsx';
@@ -19,7 +17,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Navbar /> {/* Tambahkan Navbar di sini */}
+        <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route element={<PrivateRoute />}>
