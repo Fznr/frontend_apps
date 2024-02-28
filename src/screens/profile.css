@@ -1,0 +1,78 @@
+.profile-container {
+    width: 100%;
+    height: 100vh; /* Membuat container mengisi seluruh tinggi layar */
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+    /* scroll-behavior: auto; */
+}
+
+.profile-content {
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+/* Media query untuk layar dengan lebar maksimum 430px */
+@media screen and (max-width: 430px) {
+    .profile-content {
+        background-color: #f9f9f9;
+        width: 60%; /* Menyesuaikan lebar konten dengan layar */
+        padding: 10px; /* Mengurangi padding pada layar kecil */
+    }
+}
+
+/* Media query untuk layar dengan tinggi maksimum 430px */
+@media screen and (max-height: 430px) {
+    .profile-content {
+        background-color: #f9f9f9;
+        height: 70%;
+        width: 60%; /* Menyesuaikan lebar konten dengan layar */
+        padding: 10px; /* Mengurangi padding pada layar kecil */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Penambahan style untuk button edit */
+.edit-button {
+    margin-top: 20px; /* Jarak antara foto profil dan tombol edit */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-button svg {
+    margin-right: 5px;
+}

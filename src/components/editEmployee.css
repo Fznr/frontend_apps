@@ -1,0 +1,70 @@
+.edit-employee-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit-form {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 430px), (max-height: 430px) {
+  .edit-employee-container {
+    padding: 10px;
+  }
+
+  .edit-form {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.edit-form-group {
+  margin-bottom: 20px;
+}
+
+.edit-label {
+  display: block;
+  font-weight: bold;
+}
+
+.edit-input[type="text"],
+.edit-input[type="email"],
+.edit-input[type="tel"],
+.edit-input[type="password"],
+.edit-input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-error {
+  color: red;
+  font-size: 14px;
+}
+
+.edit-button[type="submit"],
+.edit-button[type="button"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button[type="submit"]:hover,
+.edit-button[type="button"]:hover {
+  background-color: #0056b3;
+}
